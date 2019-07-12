@@ -107,10 +107,15 @@ print(Descripton)
 Descripton.popitem() #Randomly selects the item in the dictionary and removed the selected item
 print(Descripton)
 
-print(Descripton.get('Color'))
+print(Descripton.get('Color')) #Gets the value of the speicific key
 
-print(Descripton.pop('Points'))
+print(Descripton.pop('Points')) #Deletes the specific item in dictionary
 print(Descripton)
+
+
+
+
+
 
 
 
