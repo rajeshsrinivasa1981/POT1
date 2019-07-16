@@ -12,3 +12,7 @@ f.write("This is fourth statement\n")
 f.write("This is fifth statement\n")
 f.close()
 print("completed")
+
+
+tp1=(10,20)
+

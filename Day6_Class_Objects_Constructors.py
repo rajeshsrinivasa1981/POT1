@@ -102,7 +102,6 @@ class MyClass7:
 obj=MyClass7()
 obj.m1()
 
-
 ######### Example11:converting local variables in to class variables (Here Method taking arguments)
 class MyClass8:
     def values(self,val1,val2):
@@ -119,7 +118,6 @@ mc.add()
 
 ######### Example11:converting local variables in to class variables (Here constructor taking arguments)
 
-
 class MyClass:
     def __init__(self,val1,val2):
         print(val1, val2)
@@ -131,7 +129,6 @@ class MyClass:
 
 mc=MyClass(40,50)
 mc.add()
-
 
 class MyClass:
     def __str__(self):
@@ -146,6 +143,7 @@ class Emp:
         self.eid=eid
         self.ename=ename
         self.esal=esal
+
     def __str__(self):
         return("emp id:{}   emp name:{}   emp sal:{}".format(self.eid,self.ename,self.esal))
 

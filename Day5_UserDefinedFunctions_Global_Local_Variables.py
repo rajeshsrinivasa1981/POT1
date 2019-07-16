@@ -1,4 +1,3 @@
-'''
 def func1():
     pass
 
@@ -40,7 +39,7 @@ def test():
     i=100
     return
 
-print(test()) '''
+print(test())
 
 
 #Global variables and local variables
