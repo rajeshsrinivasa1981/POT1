@@ -173,22 +173,3 @@ class Child(Parent):
 
 obj=Child(101,"Rajesh","Srinivasa")
 print(obj)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
