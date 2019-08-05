@@ -19,10 +19,89 @@ Dynamic XPath
 '''
 
 
+
+'''
+
+#Locator by ID - 
+driver.find_element_by_id("value of id")
+
+#Locatory by Name - 
+driver.find_element_by_name("value of name")
+
+#Locatory by Linktext - 
+driver.find_element_by_linktext("complete link text")
+
+#Locator by PartialLinkText - 
+driver.find_element_by_partiallinktext("partial link text")
+
+#CSS Selector by ID 
+driver.find_element_CSSSelector("tagname#id")
+
+#CSS Selector by class
+driver.find_element_CSSSelector("tagname.classname")
+
+#CSS Selector by attribute
+driver.find_element_CSSSelector("tagname[attribute=value])
+
+#CSS Selector by tagname, class and attribute
+driver.find_element_CSSSelector("tagname.classname[attibute=value])
+
+#Xpath (Absolute or Full XPath) 
+
+driver.find_element_by_xpath("/html/body/div/table/")
+
+#Xpath (Relative or partial xpath) 
+
+driver.find_element_by_xpath("//tagname[@attribute='value']")
+
+#Contains 
+driver.find_element_by_xpath("//tagname[contains(@attribute,'value')]")
+
+#Contains with text 
+driver.find_element_by_xpath("//tagname[contains(text(),'text')]")
+
+
+OR - 
+
+//tagname[@attribute1='value' OR @attribute2='value']
+
+AND 
+
+//tagname[@attribute1='value' AND @attribute2='value']
+
+
+Starts with - 
+
+//tagname[starts-with(text(),'Message')]
+
+text - 
+
+//tagname[text()='Message']
+
+preceeding - 
+
+//tagname[@attribute='value']//preceeding::input[3]
+
+following - 
+
+//tagname[@attribute='value']//following::input[3]
+
+
+
+
+
+
+
+'''
+
+
+
+
+
+
 #Locator by ID
 
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 
 driver=webdriver.Chrome(ChromeDriverManager().install())
 driver.implicitly_wait(10)
