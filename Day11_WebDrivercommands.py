@@ -17,7 +17,6 @@ driver = webdriver.Firefox(executable_path="C:/Users/RS042424/Downloads/Drivers/
 
 #Launching Edge Browser - https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 driver = webdriver.Edge(executable_path="C:/Users/RS042424/Downloads/Drivers/MicrosoftWebDriver.exe")
-"""
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -60,9 +59,10 @@ print(v5)
 
 driver.close() #closes the current browser/page
 driver.quit() #closes all the open pages and browser
+"""
 
-
-
+from selenium import webdriver
+driver = webdriver.Opera(executable_path="C:/Users/Admin/Downloads/operadriver_win32/operadriver_win32/operadriver.exe")
 
 
 
